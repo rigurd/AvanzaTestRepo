@@ -3,7 +3,7 @@ package classes;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.LinkedHashSet;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -12,8 +12,8 @@ public class Dubletter {
 	public static Collection<Integer> multiples(List<Integer> numbers){
 		
 		ArrayList<Integer> storedDuplicates = new ArrayList<Integer>();
-		Set<Integer> repeatCheck = new LinkedHashSet<>();
-		Set<Integer> hashSetToClearDuplicates = new LinkedHashSet<>();
+		Set<Integer> repeatCheck = new HashSet<>();
+		Set<Integer> hashSetToClearDuplicates = new HashSet<>();
 		Collections.sort(numbers);
 		
 		for (int i : numbers){
@@ -26,13 +26,6 @@ public class Dubletter {
 		storedDuplicates.addAll(hashSetToClearDuplicates);
 		
 		return storedDuplicates;
-	}
-	
-	public static Collection<Integer> multiples1(List<Integer> numbers){
-		
-		
-		
-		return numbers;
 	}
 	
 }
